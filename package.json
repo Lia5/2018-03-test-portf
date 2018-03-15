@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "my test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lia5/2018-03-test-portf.git"
+  },
+  "author": "Lia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lia5/2018-03-test-portf/issues"
+  },
+  "homepage": "https://github.com/Lia5/2018-03-test-portf#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}

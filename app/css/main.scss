@@ -1,0 +1,11 @@
+$text-color: #1c1c1c;
+$white: #ffffff;
+// laout
+@import "settings/normalize.scss";
+@import "settings/bootstrap-grid.scss";
+@import "settings/fonts.scss";
+
+@import "settings/setting.scss";
+
+@import "sections/adaptive.scss";
+
