@@ -1,47 +1,32 @@
 @font-face { 
-  font-family: 'futura-book-bold'; 
-  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Book.eot') format('eot'),
-       url('../fonts/FuturaPT-Book.otf') format('otf'),
-       url('../fonts/FuturaPT-Book.svg') format('svg'),
-       url('../fonts/FuturaPT-Book.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('../fonts/FuturaPT-Book.woff') format('woff'); 
-  font-weight: 700; 
-  font-style: normal; 
-}
-
-@font-face { 
-  font-family: 'futura-book'; 
-  src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
-       url('../fonts/FuturaPT-Book.eot') format('eot'),
-       url('../fonts/FuturaPT-Book.otf') format('otf'),
-       url('../fonts/FuturaPT-Book.svg') format('svg'),
-       url('../fonts/FuturaPT-Book.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('../fonts/FuturaPT-Book.woff') format('woff'); 
+  font-family: 'OpenSans'; 
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('../fonts/OpenSans-Regular.eot') format('eot'),
+       url('../fonts/OpenSans-Regular.svg') format('svg'),
+       url('../fonts/OpenSans-Regular.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/OpenSans-Regular.woff') format('woff'); 
   font-weight: 400; 
   font-style: normal; 
 }
 
-
 @font-face { 
-  font-family: 'futura-demi-bold'; 
-  src: url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
-  	   url('../fonts/FuturaPT-Demi.eot') format('eot'),
-  	   url('../fonts/FuturaPT-Demi.otf') format('otf'),
-  	   url('../fonts/FuturaPT-Demi.svg') format('svg'),
-       url('../fonts/FuturaPT-Demi.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('../fonts/FuturaPT-Demi.woff') format('woff'); 
+  font-family: 'OpenSans'; 
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+       url('../fonts/OpenSans-SemiBold.eot') format('eot'),
+       url('../fonts/OpenSans-SemiBold.svg') format('svg'),
+       url('../fonts/OpenSans-SemiBold.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/OpenSans-SemiBold.woff') format('woff'); 
+  font-weight: 600; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'OpenSans'; 
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('../fonts/OpenSans-Bold.eot') format('eot'),
+       url('../fonts/OpenSans-Bold.svg') format('svg'),
+       url('../fonts/OpenSans-Bold.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/OpenSans-Bold.woff') format('woff'); 
   font-weight: 700; 
   font-style: normal; 
 }
-@font-face { 
-  font-family: 'futura-demi'; 
-  src: url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
-  	   url('../fonts/FuturaPT-Demi.eot') format('eot'),
-  	   url('../fonts/FuturaPT-Demi.otf') format('otf'),
-  	   url('../fonts/FuturaPT-Demi.svg') format('svg'),
-       url('../fonts/FuturaPT-Demi.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('../fonts/FuturaPT-Demi.woff') format('woff'); 
-  font-weight: 400; 
-  font-style: normal; 
-}
+

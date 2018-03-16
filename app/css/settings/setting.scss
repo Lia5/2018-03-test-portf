@@ -5,14 +5,15 @@ body {
 	margin: 0;
 	padding: 0;
 	color: $text-color;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.2;
 	background: $white;
 	position: relative;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'OpenSans', sans-serif;
 }
 
 p {
+	color: $grey;
 	margin: 0;
 	padding: 0;
 }
@@ -25,6 +26,7 @@ li {
 	list-style: none;
 }
 a {
+	color: $text-color;
 	text-decoration: none;
 }
 h1,
@@ -36,36 +38,23 @@ h6 {
 	margin: 0;
 	font-weight: normal;
 }
-.container {
-	height: 100%;
-	position: relative;
-	max-width: 1170px;
-	margin: 0 auto;
-	padding: 0 20px;
-}
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table; 
-}
 
-.clearfix:after {
-    clear: both;
-}
 
 .section-title {
-	font-size: 42px;
-	color: $white;
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 100px;
+}
+.typical-btn {
+	font-size: 16px;
+	font-weight: 600;
+
 }
 button {
 	cursor: pointer;
 	border: none;
 	font-family: 'futura-book';
 	font-weight: 700;
-}
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
 }

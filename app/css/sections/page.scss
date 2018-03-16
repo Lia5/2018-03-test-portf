@@ -1,0 +1,34 @@
+/*nav*/
+.menu__items {
+  display: flex;
+  font-size: 16px;
+}
+.menu__item a {
+  display: block;
+  padding: 16px;
+}
+.menu__item:last-child a {
+  padding-right: 0;
+  
+}
+
+
+
+/*header__main*/
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.header__img img {
+  width: 100%;
+}
+.to-portfolio:after {
+  content: "\203A";
+  width: 7px;
+  height: 12px;
+}
+.typical-btn a {
+  color: $white;
+  padding: 18px 22px;
+  background-color: $blue;
+}
