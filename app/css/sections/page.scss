@@ -124,7 +124,7 @@ header {
 .header__img {
   width: 301px;
   height: 387px;
-  text-align: -webkit-center;
+  margin: 0 auto;
 }
 .header__img img {
   width: 100%;
@@ -221,7 +221,6 @@ header {
   .header__img {
     width: 260px;
     height: 335px;
-    margin: 0 auto;
   }
 }
 @media screen and (max-width: 575px) {
