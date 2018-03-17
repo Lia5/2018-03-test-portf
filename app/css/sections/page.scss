@@ -1,5 +1,12 @@
+header {
+  border-bottom: 1px solid $grey-light;
+}
 /*nav*/
+.header__menu {
+  padding-top: 22px;
+}
 .menu__items {
+  position: relative;
   display: flex;
   font-size: 16px;
 }
@@ -9,26 +16,233 @@
 }
 .menu__item:last-child a {
   padding-right: 0;
-  
+}
+
+/*gumburger*/
+.trigger {
+  width: 30px;
+  height: 12px;
+  padding: 11px 0;
+  font-size: 0;
+  box-sizing: content-box;
+  z-index: 2;
+  position: relative;
+  display: none;
+}
+.trigger__line {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  vertical-align: bottom;
+  background: $grey-dark;
+  transition: background .3s .5s;
+}
+.trigger__line::before,
+.trigger__line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: $grey-dark;
+  transform-origin: 50% 50%;
+  transition: top .3s .3s,transform .3s;
+}
+.trigger__line::before {
+  top: 10px;
+}
+.trigger__line::after {
+  top: -10px;
+}
+.trigger--show .trigger__line {
+  width: 28px;
+  background: 0 0;
+  transition: background 0s linear;
+}
+.trigger--show .trigger__line::before,
+.trigger--show .trigger__line::after {
+  width: 28px;
+  top: 33px;
+  left: 14px;
+  transition: top .3s,transform .3s .5s;
+  background-color: $white;
+  position: fixed;
+}
+.trigger--show .trigger__line::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.trigger--show .trigger__line::after {
+  transform: rotate3d(0, 0, 1, -45deg);
 }
 
 
 
+.trigger--show+nav {
+  display: block;
+  position: relative;
+  z-index: 2;
+  position: fixed;
+
+}
+.trigger--show+nav a {
+  color: $white;
+}
+.trigger--show+nav .menu__items {
+  flex-direction: column;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+.trigger--show+nav+.overlay {
+  display: block;
+}
+
 /*header__main*/
-h1 {
+.header__main {
+  padding-bottom: 0;
+}
+.header__about {
+  padding-bottom: 40px;
+}
+.about-title {
   font-size: 30px;
   font-weight: 800;
+  padding-bottom: 30px;
+}
+.header__img {
+  width: 301px;
+  height: 387px;
+  text-align: -webkit-center;
 }
 .header__img img {
   width: 100%;
 }
-.to-portfolio:after {
+
+.to-portfolio a:after {
   content: "\203A";
-  width: 7px;
-  height: 12px;
+  position: absolute;
+  top: 10%;
+  right: 7px;
+  color: $white;
+  font-size: 30px;
 }
 .typical-btn a {
+  display: inline-block;
+  position: relative;
+  width: 195px;
+  text-align: center;
   color: $white;
-  padding: 18px 22px;
+  padding: 16px 0;
   background-color: $blue;
+  border: 1px solid $blue;
+}
+.typical-btn a:hover {
+  background-color: $white;
+  color: $blue;
+}
+.typical-btn a:hover:after {
+  color: $blue;
+}
+/*portfolio*/
+.portfolio-title {
+  padding-bottom: 82px;
+}
+.portfolio__item {
+  overflow: hidden;
+}
+.portfolio__item img {
+  width: 100%;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+.portfolio__item img:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+/*footer*/
+.contact {
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact__wrap {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-title {
+  color: $white;
+  padding-bottom: 30px;
+}
+.contact p {
+  color: $white;
+}
+
+
+.social {
+  background-color: $grey-dark;
+}
+.social__items {
+  text-align: center;
+}
+.social__item {
+  display: inline-block;
+  color: $white;
+   padding: 10px 0;  
+   font-size: 20px;
+   margin: 20px 15px;
+}
+ .social__item a {
+   color: $white;
+   padding: 10px;
+   border: 1px solid $white;
+ }
+ .social__item a:hover {
+   color: $grey-dark;
+   background-color: $white;
+ }
+@media screen and (max-width: 767px) {
+  .header__img {
+    width: 260px;
+    height: 335px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .menu__items {
+    justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+  .trigger {
+    display: block;
+  }
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .portfolio-title {
+    padding-bottom: 40px;
+  }
+  .social__item {
+    font-size: 18px;
+    margin: 20px 10px;
+  }
 }

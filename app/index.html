@@ -7,7 +7,7 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+
 </head>
 <body>
 
@@ -16,41 +16,108 @@
   <div class="header__menu">
     <div class="container">
       <div class="row">
-        <div class="col-xl-7"></div>
-        <div class="col-xl-5">
-          <nav>
-            <ul class="menu__items">
-              <li class="menu__item"><a href="#">Главная </a></li>
-              <li class="menu__item"><a href="#">Портфолио</a></li>
-              <li class="menu__item"><a href="#">Обо мне</a></li>
-              <li class="menu__item"><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
+        <div class="col-xl-7 col-lg-6 col-md-4 col-sm-2"></div>
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 col-12">
+          <div class="main-menu">
+            <div class="trigger">
+              <span class="trigger__line">
+                Меню
+              </span>
+            </div>
+            <nav>
+              <ul class="menu__items">
+                <li class="menu__item"><a href="#header__main">Главная </a></li>
+                <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+                <li class="menu__item"><a href="#">Обо мне</a></li>
+                <li class="menu__item"><a href="#contact">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="overlay"></div>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
-  <div class="header__main">
+  <div id="header__main" class="section header__main">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
           <div class="header__about">
-            <h1>Привет меня зовут Имя</h1>
+            <h1 class="about-title">Привет меня зовут Имя</h1>
             <p>Мое призвание - профессиональная верстка интерфейсов и этим я занимаюсь уже более 2 лет</p>
             <div class="typical-btn to-portfolio">
-              <a href="#porfolio">Мое портфолио</a>
+              <a href="#portfolio">Мое портфолио</a>
             </div> 
           </div><!-- /.header__about -->
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
           <div class="header__img">
-            <img src="img/iphone.png" alt="">
+            <img src="img/iphone.png" alt="Телефон">
           </div><!-- /.header__img -->
         </div>
       </div>
     </div>
   </div><!-- /.header__main -->
 </header>
+<section class="section">
+  <div id="portfolio" class="portfolio">
+    <div class="section-title portfolio-title">Портфолио</div>
+    <div class="portfolio__items">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="portfolio__item"><a href="#"><img src="img/portfolio-item-1.png" alt="Работа 1"></a></div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="portfolio__item"><a href="#"><img src="img/portfolio-item-2.png" alt="Работа 2"></a></div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <div class="portfolio__item"><a href="#"><img src="img/portfolio-item-3.png" alt="Работа 3"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div id="contact" class="contact">
+    <div class="container section">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="contact__wrap">
+            <div class="section-title contact-title">Связаться со мной</div>
+            <p>Свяжитесь  со мной для бесплатной 
+                косультации или заказа верстки </p>
+            <div class="typical-btn">
+              <a href="https://telegram.me/Liastochka">Связаться со мной</a>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <ul class="social__items">
+            <li class="social__item"><a href="#"><i class="icon-behance" aria-hidden="true"></i></a></li>
+            <li class="social__item"><a href="https://vk.com/id6710548"><i class="icon-vkontakte" aria-hidden="true"></i></a></li>
+            <li class="social__item"><a href="https://telegram.me/Liastochka"><i class="icon-paper-plane fa-inverse" aria-hidden="true"></i></a></li>
+            <li class="social__item"><a href="https://www.facebook.com/profile.php?id=100011010337639"><i class="icon-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+</footer>
+
 
 <!--JAVA SCRIPT-->
 <script src="js/custom.js" type="text/javascript"></script>

@@ -1,12 +1,15 @@
 $text-color: #1c1c1c;
 $white: #ffffff;
 $grey: #5c5c5c;
+$grey-light: #bebebe;
+$grey-dark: #262626;
 $blue: #2f68fa;
 
 // laout
 @import "settings/normalize.scss";
 @import "settings/bootstrap-grid.scss";
-@import "settings/font-awesome.scss";
+@import "settings/fontello.scss";
+@import "settings/fontello-embedded.scss";
 @import "settings/fonts.scss";
 
 @import "settings/setting.scss";
